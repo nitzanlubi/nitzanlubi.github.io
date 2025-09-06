@@ -59,7 +59,7 @@ plugins:
 
 author:
   name   : "Nitzan Lubianiker"
-  avatar : "/assets/images/nitzan_bio.jpg"
+  avatar : "/assets/images/nitzan_bio.jpeg"
   bio    : "Cognitive Neuroscientist studying learning, memory and self-neuromodulation."
   links:
     - label: "Website"
