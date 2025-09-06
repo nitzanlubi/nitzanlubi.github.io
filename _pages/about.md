@@ -1,8 +1,6 @@
 ---
 permalink: /about/
-title: "About"
+title: "About me"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
-
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+I am a Postdoctoral Researcher at the [computaitonal memory lab](https://compmem.princeton.edu/) working with [Dr. Ken Norman](https://pni.princeton.edu/people/kenneth-norman) and at the [Turk-Browne lab](https://ntblab.yale.edu/) working with [Nick Turk-Browne](https://psychology.yale.edu/people/nick-turk-browne). As part of my research, I also collaborate with [Dr. Yvette Sheline](https://www.med.upenn.edu/apps/faculty/index.php/g275/p8659512) from the department of Psychiatry at the University of Pennsylvenia. My current research focuses on human learning and memory, and on the development and application of self-neuromodulation techniques to change cognition and behavior. Prior to this, I recieved my PhD in Psychology from Tel Aviv University, working with [Dr. Talma Hendler](https://english.tau.ac.il/profile/thendler). Before that, I studied at the [Adi Latuman Interdisciplinary program for outstanding students](https://excellent.tau.ac.il/english) at the Tel aviv University, focusing on Psychology, Biology and Philosophy, and completing my M.Sc. degree at the Sagol School of Neuroscience.
