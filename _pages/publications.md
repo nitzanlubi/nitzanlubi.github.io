@@ -1,6 +1,7 @@
 ---
 permalink: /publications/
 title: "Publications"
+classes: publications-page
 ---
 
 ## Pre-prints

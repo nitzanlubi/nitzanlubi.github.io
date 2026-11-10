@@ -73,6 +73,9 @@ author:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/nitzan-lubianiker-955063186"
+    - label: "Google Scholar"
+      icon: "fab fa-fw fa-google-scholar"
+      url: "https://scholar.google.co.il/citations?user=zXrLc00AAAAJ&hl=en&oi=ao"
 
 footer:
   links:
