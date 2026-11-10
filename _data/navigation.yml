@@ -1,9 +1,9 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
+  - title: "Publications"
+    url: /publications/
+  - title: "Contact"
+    url: /contact/
+  - title: "CV"
+    url: /assets/files/Nitzan_Lubianiker_CV.pdf
