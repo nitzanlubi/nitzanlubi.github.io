@@ -3,7 +3,7 @@ permalink: /
 redirect_from:
   - /about/
 title: "About me"
-classes: about-page
+classes: wide
 ---
 
 <img src="/assets/images/nitzan_photo.jpg" alt="Nitzan Lubianiker" style="display:block; width:100%; max-width:680px; margin:0 auto 1.5em; border-radius:8px;">
