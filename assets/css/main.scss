@@ -18,3 +18,8 @@ body {
 .publications-page .page__content {
   font-size: 0.7em;
 }
+
+// About page: let text use the full width (drop the empty right-hand column)
+.about-page .page {
+  padding-right: 0;
+}
