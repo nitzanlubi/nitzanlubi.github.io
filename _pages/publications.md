@@ -1,7 +1,9 @@
 ---
 permalink: /publications/
 title: "Publications"
-classes: publications-page
+classes:
+  - wide
+  - publications-page
 ---
 
 ## Pre-prints
@@ -11,7 +13,7 @@ classes: publications-page
 ## Peer-reviewed
 
 **Lubianiker, N.**, Koren, T., Djerasi, M., Sirotkin, M., Singer, N., Jalon, I., ... & Hendler, T. (2026). Upregulation of reward mesolimbic activity and immune response to vaccination: a randomized controlled trial. *Nature Medicine*, *32*(2), 572–581. [https://doi.org/10.1038/s41591-025-04140-5](https://doi.org/10.1038/s41591-025-04140-5)<br>
-<small>Covered by <em>Scientific American</em>, <em>The Guardian</em>, <em>The Economist</em>, <em>Science News</em>, <em>Science</em>, <em>Smithsonian</em> and others (see <a href="#selected-media-coverage">media coverage</a> below).</small>
+<small>Covered by <em>Scientific American</em>, <em>The Guardian</em>, <em>The Economist</em>, <em>Science News</em>, <em>Science</em>, <em>Smithsonian</em> and others (see <a href="/media/">Media</a>).</small>
 
 Gurevitch, G., **Lubianiker, N.**, Markovits, T., Or-Borichev, A., Fine, N. B., Fruchtman-Steinbok, T., ... & Hendler, T. (2024). Amygdala self-neuromodulation capacity as a window for process-related network recruitment. *Philosophical Transactions of the Royal Society B*. [https://doi.org/10.1098/rstb.2024.0186](https://doi.org/10.1098/rstb.2024.0186)
 
@@ -28,17 +30,3 @@ Sar-El, R., Sharon, H., **Lubianiker, N.**, Hendler, T., & Raz, G. (2020). Induc
 **Lubianiker, N.**, Goldway, N., Fruchtman-Steinbok, T., Paret, C., Keynan, J. N., Singer, N., ... & Hendler, T. (2019). Process-based framework for precise neuromodulation. *Nature Human Behaviour*, *3*(5), 436–445. [https://doi.org/10.1038/s41562-019-0573-y](https://doi.org/10.1038/s41562-019-0573-y)
 
 Jacob, Y., Or-Borichev, A., Jackont, G., **Lubianiker, N.**, & Hendler, T. (2017). Network based fMRI neurofeedback for emotion regulation; proof-of-concept. In *International Conference on Complex Networks and their Applications* (pp. 1250–1260). Springer, Cham. [https://doi.org/10.1007/978-3-319-72150-7_101](https://doi.org/10.1007/978-3-319-72150-7_101)
-
-## Selected media coverage
-
-*Scientific American* — [“Positive thinking may boost immune response from vaccines, new brain training study shows.”](https://www.scientificamerican.com/article/new-brain-training-study-could-help-explain-the-placebo-effect) A. Parshall, Jan. 19, 2026.
-
-*The Guardian* — [“Positive thinking could boost immune response to vaccines, say scientists.”](https://www.theguardian.com/society/2026/jan/19/positive-thinking-could-boost-immune-response-to-vaccines-study-finds) I. Sample, Jan. 19, 2026.
-
-*The Economist* (print edition) — “Mind over matter.” S. Wikeley, Jan. 24, 2026.
-
-*Science*, In the Pipeline blog — [“Bearing down on the placebo effect.”](https://www.science.org/content/blog-post/bearing-down-placebo-effect) D. Lowe, Jan. 21, 2026.
-
-*Science News* — [“A study hints positive thinking could strengthen vaccine immunity.”](https://www.sciencenews.org/article/placebo-brain-activity-vaccine-antibody) S. Makin, Jan. 30, 2026.
-
-*New Atlas* — [“The unusual way to boost vaccine effectiveness.”](https://newatlas.com/medical/vaccine-positive-thinking) Jan. 2026.

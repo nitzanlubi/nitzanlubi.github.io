@@ -1,0 +1,43 @@
+# Media coverage tiles (Media tab). Add a new item to add a tile.
+# image: the article's preview image (og:image). Leave empty for a text-only tile.
+- outlet: "Scientific American"
+  title: "Positive thinking may boost immune response from vaccines, new brain training study shows"
+  date: "Jan. 19, 2026"
+  url: "https://www.scientificamerican.com/article/new-brain-training-study-could-help-explain-the-placebo-effect"
+  image: "https://static.scientificamerican.com/dam/m/551f2933ee3652a1/original/GettyImages-1485146798-resized.jpg?m=1768601709.327&w=1200"
+
+- outlet: "The Guardian"
+  title: "Positive thinking could boost immune response to vaccines, say scientists"
+  date: "Jan. 19, 2026"
+  url: "https://www.theguardian.com/society/2026/jan/19/positive-thinking-could-boost-immune-response-to-vaccines-study-finds"
+  image: "https://i.guim.co.uk/img/media/e96883520a205430ed33e6d26d69065d42d9a90c/410_251_1397_1118/master/1397.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c50913eb471496c0f623f31ffc8940df"
+
+- outlet: "The Economist"
+  title: "Mind over matter (print edition)"
+  date: "Jan. 24, 2026"
+  url: ""
+  image: ""
+
+- outlet: "Science"
+  title: "In the Pipeline: Bearing down on the placebo effect"
+  date: "Jan. 21, 2026"
+  url: "https://www.science.org/content/blog-post/bearing-down-placebo-effect"
+  image: "https://www.science.org/pb-assets/images/blogs/pipeline/default-image-1644619966880.png"
+
+- outlet: "Science News"
+  title: "A study hints positive thinking could strengthen vaccine immunity"
+  date: "Jan. 30, 2026"
+  url: "https://www.sciencenews.org/article/placebo-brain-activity-vaccine-antibody"
+  image: "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/01/012226_sm_placebo-boosts-immune_feat.jpg"
+
+- outlet: "Smithsonian"
+  title: "Positive thinking might boost your immune system's responses to vaccines, new research suggests"
+  date: "Jan. 2026"
+  url: "https://www.smithsonianmag.com/smart-news/positive-thinking-might-boost-your-immune-systems-responses-to-vaccines-new-research-suggests-180988056/"
+  image: "https://th-thumbnailer.cdn-si-edu.com/RLaSN3Hgbcs5FcufTLjID5mjJBA=/fit-in/1600x0/filters:focal(3976x2689:3977x2690)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/85/43/8543b263-7d4e-4321-ba80-b8819cf6c9a2/vaccine-positive-thinking.jpg"
+
+- outlet: "New Atlas"
+  title: "The unusual way to boost vaccine effectiveness"
+  date: "Jan. 2026"
+  url: "https://newatlas.com/medical/vaccine-positive-thinking"
+  image: "https://assets.newatlas.com/dims4/default/7388214/2147483647/strip/true/crop/2000x1050+0+142/resize/1200x630!/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F35%2Fa0%2F09bc0cfc4b4f86857e5bc3fcfc0c%2Fsmiling-vaccine.jpg&na.image_optimisation=0"

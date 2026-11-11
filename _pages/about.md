@@ -3,10 +3,12 @@ permalink: /
 redirect_from:
   - /about/
 title: "About me"
-classes: wide
+classes:
+  - wide
+  - about-page
 ---
 
-<img src="/assets/images/nitzan_photo.jpg" alt="Nitzan Lubianiker" style="display:block; width:100%; max-width:680px; margin:0 auto 1.5em; border-radius:8px;">
+<img src="/assets/images/nitzan_photo.jpg" alt="Nitzan Lubianiker" style="display:block; width:100%; max-width:680px; margin:0 0 1.5em; border-radius:8px;">
 
 Hi, I’m Nitzan – a postdoctoral researcher at Yale and Princeton, working with Professors [Ken Norman](https://compmem.princeton.edu/) and [Nick Turk-Browne](https://ntblab.yale.edu/). Before that, I completed my Ph.D. at Tel Aviv University with Professor [Talma Hendler](https://en-social-sciences.tau.ac.il/profile/thendler). Prior to this, I attended the [Adi Lautman interdisciplinary program for outstanding students](https://excellent.tau.ac.il/english), studying Psychology, Biology and Philosophy.
 
