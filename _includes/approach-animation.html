@@ -1,0 +1,266 @@
+<!-- Animated illustration of the research approach.
+     Include on a page with: {% include approach-animation.html %} -->
+<figure class="approach-anim" aria-label="Animation: under adversity the brain's internal model drifts from an adaptive state toward rigidity; closed-loop neurofeedback moves it back toward adaptive flexibility.">
+<svg viewBox="0 0 960 655" role="img" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aa-spectrum" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="0.13" stop-color="#36507a"/>
+      <stop offset="0.25" stop-color="#8db8e6"/>
+      <stop offset="0.62" stop-color="#9cc2ea"/>
+      <stop offset="0.75" stop-color="#eab2b2"/>
+      <stop offset="0.88" stop-color="#d9575a"/>
+      <stop offset="1" stop-color="#a61b1f"/>
+    </linearGradient>
+    <radialGradient id="aa-brain-calm" cx="0.55" cy="0.5" r="0.75">
+      <stop offset="0" stop-color="#eeedf9"/>
+      <stop offset="0.55" stop-color="#d6d4f0"/>
+      <stop offset="1" stop-color="#aeaada"/>
+    </radialGradient>
+    <radialGradient id="aa-brain-rigid" cx="0.55" cy="0.5" r="0.75">
+      <stop offset="0" stop-color="#ffecec"/>
+      <stop offset="1" stop-color="#e58f93"/>
+    </radialGradient>
+    <filter id="aa-shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1e293b" flood-opacity="0.18"/>
+    </filter>
+    <marker id="aa-head" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- ===== Spectrum ===== -->
+  <g class="aa-spectrum">
+    <text x="120" y="50" class="aa-label" text-anchor="start">Overflexible</text>
+    <text x="120" y="72" class="aa-sublabel" text-anchor="start">internal model</text>
+    <text x="480" y="50" class="aa-label aa-blue" text-anchor="middle">Adaptive</text>
+    <text x="480" y="72" class="aa-sublabel" text-anchor="middle">flexible yet stable</text>
+    <text x="840" y="50" class="aa-label aa-red" text-anchor="end">Rigid</text>
+    <text x="840" y="72" class="aa-sublabel" text-anchor="end">internal model</text>
+
+    <rect x="120" y="112" width="720" height="22" rx="11" fill="url(#aa-spectrum)"/>
+    <line x1="300" x2="300" y1="96" y2="152" class="aa-boundary"/>
+    <line x1="660" x2="660" y1="96" y2="152" class="aa-boundary"/>
+  </g>
+
+  <!-- Brain marker (moves along the spectrum) -->
+  <g id="aa-brain" transform="translate(480 123)">
+    <g filter="url(#aa-shadow)">
+      <g transform="scale(0.36) translate(-222 -108)">
+        <path d="M176,262 C182,282 182,300 172,318 C166,328 162,334 160,339 L177,344 C186,330 196,316 202,300 C207,286 208,274 207,262 Z" fill="url(#aa-brain-calm)"/>
+        <path class="aa-rigid" d="M176,262 C182,282 182,300 172,318 C166,328 162,334 160,339 L177,344 C186,330 196,316 202,300 C207,286 208,274 207,262 Z" fill="url(#aa-brain-rigid)" opacity="0"/>
+        <path d="M176,262 C182,282 182,300 172,318 C166,328 162,334 160,339 L177,344 C186,330 196,316 202,300 C207,286 208,274 207,262 Z" class="aa-brain-outline" fill="none"/>
+        <clipPath id="aa-cb-clip"><path d="M100.0,222.0 C95.5,225.2 89.3,236.7 88.0,245.0 C86.7,253.3 88.3,263.7 92.0,272.0 C95.7,280.3 102.0,289.0 110.0,295.0 C118.0,301.0 129.7,305.8 140.0,308.0 C150.3,310.2 162.0,310.0 172.0,308.0 C182.0,306.0 192.3,301.3 200.0,296.0 C207.7,290.7 215.5,282.3 218.0,276.0 C220.5,269.7 218.7,263.0 215.0,258.0 C211.3,253.0 203.5,249.0 196.0,246.0 C188.5,243.0 179.3,242.0 170.0,240.0 C160.7,238.0 149.2,236.3 140.0,234.0 C130.8,231.7 121.7,228.0 115.0,226.0 C108.3,224.0 104.5,218.8 100.0,222.0 Z"/></clipPath>
+        <path d="M100.0,222.0 C95.5,225.2 89.3,236.7 88.0,245.0 C86.7,253.3 88.3,263.7 92.0,272.0 C95.7,280.3 102.0,289.0 110.0,295.0 C118.0,301.0 129.7,305.8 140.0,308.0 C150.3,310.2 162.0,310.0 172.0,308.0 C182.0,306.0 192.3,301.3 200.0,296.0 C207.7,290.7 215.5,282.3 218.0,276.0 C220.5,269.7 218.7,263.0 215.0,258.0 C211.3,253.0 203.5,249.0 196.0,246.0 C188.5,243.0 179.3,242.0 170.0,240.0 C160.7,238.0 149.2,236.3 140.0,234.0 C130.8,231.7 121.7,228.0 115.0,226.0 C108.3,224.0 104.5,218.8 100.0,222.0 Z" fill="url(#aa-brain-calm)"/>
+        <path class="aa-rigid" d="M100.0,222.0 C95.5,225.2 89.3,236.7 88.0,245.0 C86.7,253.3 88.3,263.7 92.0,272.0 C95.7,280.3 102.0,289.0 110.0,295.0 C118.0,301.0 129.7,305.8 140.0,308.0 C150.3,310.2 162.0,310.0 172.0,308.0 C182.0,306.0 192.3,301.3 200.0,296.0 C207.7,290.7 215.5,282.3 218.0,276.0 C220.5,269.7 218.7,263.0 215.0,258.0 C211.3,253.0 203.5,249.0 196.0,246.0 C188.5,243.0 179.3,242.0 170.0,240.0 C160.7,238.0 149.2,236.3 140.0,234.0 C130.8,231.7 121.7,228.0 115.0,226.0 C108.3,224.0 104.5,218.8 100.0,222.0 Z" fill="url(#aa-brain-rigid)" opacity="0"/>
+        <g class="aa-folia" clip-path="url(#aa-cb-clip)"><path d="M174.6,230.5 Q178.4,249.1 196,256"/><path d="M165.6,228.9 Q174.8,249.2 196,256"/><path d="M156.4,228.1 Q171.0,249.4 196,256"/><path d="M147.0,228.1 Q167.1,249.9 196,256"/><path d="M137.8,229.0 Q163.1,250.7 196,256"/><path d="M128.9,230.7 Q159.3,251.8 196,256"/><path d="M120.4,233.1 Q155.6,253.2 196,256"/><path d="M112.5,236.3 Q152.2,254.9 196,256"/><path d="M105.5,240.2 Q149.2,257.0 196,256"/><path d="M99.3,244.7 Q146.6,259.3 196,256"/><path d="M94.3,249.7 Q144.6,261.8 196,256"/><path d="M90.3,255.0 Q143.1,264.5 196,256"/><path d="M87.6,260.7 Q142.2,267.4 196,256"/><path d="M86.2,266.6 Q142.0,270.3 196,256"/><path d="M86.1,272.5 Q142.4,273.2 196,256"/><path d="M87.3,278.4 Q143.5,276.0 196,256"/><path d="M89.8,284.1 Q145.2,278.8 196,256"/><path d="M93.6,289.6 Q147.6,281.3 196,256"/><path d="M98.5,294.6 Q150.6,283.7 196,256"/><path d="M104.5,299.2 Q154.1,285.7 196,256"/><path d="M111.4,303.1 Q158.1,287.4 196,256"/><path d="M119.2,306.4 Q162.5,288.7 196,256"/><path d="M127.6,309.0 Q167.3,289.6 196,256"/><path d="M136.5,310.8 Q172.3,290.0 196,256"/><path d="M145.7,311.8 Q177.5,289.9 196,256"/><path d="M155.0,312.0 Q182.7,289.3 196,256"/><path d="M164.2,311.3 Q187.9,288.1 196,256"/><path d="M173.3,309.8 Q192.9,286.4 196,256"/><path d="M181.9,307.5 Q197.6,284.1 196,256"/><path d="M189.9,304.4 Q201.9,281.3 196,256"/></g>
+        <circle cx="196" cy="256" r="8" fill="url(#aa-brain-calm)" class="aa-brain-outline"/>
+        <path d="M100.0,222.0 C95.5,225.2 89.3,236.7 88.0,245.0 C86.7,253.3 88.3,263.7 92.0,272.0 C95.7,280.3 102.0,289.0 110.0,295.0 C118.0,301.0 129.7,305.8 140.0,308.0 C150.3,310.2 162.0,310.0 172.0,308.0 C182.0,306.0 192.3,301.3 200.0,296.0 C207.7,290.7 215.5,282.3 218.0,276.0 C220.5,269.7 218.7,263.0 215.0,258.0 C211.3,253.0 203.5,249.0 196.0,246.0 C188.5,243.0 179.3,242.0 170.0,240.0 C160.7,238.0 149.2,236.3 140.0,234.0 C130.8,231.7 121.7,228.0 115.0,226.0 C108.3,224.0 104.5,218.8 100.0,222.0 Z" class="aa-brain-outline" fill="none"/>
+        <path d="M60.0,190.0 C58.3,181.7 56.7,170.8 58.0,160.0 C59.3,149.2 62.7,136.3 68.0,125.0 C73.3,113.7 80.5,102.5 90.0,92.0 C99.5,81.5 111.7,70.3 125.0,62.0 C138.3,53.7 154.2,46.8 170.0,42.0 C185.8,37.2 203.3,34.3 220.0,33.0 C236.7,31.7 253.7,31.8 270.0,34.0 C286.3,36.2 303.7,39.7 318.0,46.0 C332.3,52.3 345.3,61.7 356.0,72.0 C366.7,82.3 375.7,95.8 382.0,108.0 C388.3,120.2 392.7,133.3 394.0,145.0 C395.3,156.7 393.7,169.5 390.0,178.0 C386.3,186.5 379.5,192.0 372.0,196.0 C364.5,200.0 352.3,200.0 345.0,202.0 C337.7,204.0 331.2,204.0 328.0,208.0 C324.8,212.0 328.7,220.0 326.0,226.0 C323.3,232.0 318.8,239.7 312.0,244.0 C305.2,248.3 296.2,250.3 285.0,252.0 C273.8,253.7 258.3,254.3 245.0,254.0 C231.7,253.7 217.5,252.0 205.0,250.0 C192.5,248.0 180.8,245.0 170.0,242.0 C159.2,239.0 149.7,234.7 140.0,232.0 C130.3,229.3 121.2,227.7 112.0,226.0 C102.8,224.3 92.3,224.7 85.0,222.0 C77.7,219.3 72.2,215.3 68.0,210.0 C63.8,204.7 61.7,198.3 60.0,190.0 Z" fill="url(#aa-brain-calm)"/>
+        <path class="aa-rigid" d="M60.0,190.0 C58.3,181.7 56.7,170.8 58.0,160.0 C59.3,149.2 62.7,136.3 68.0,125.0 C73.3,113.7 80.5,102.5 90.0,92.0 C99.5,81.5 111.7,70.3 125.0,62.0 C138.3,53.7 154.2,46.8 170.0,42.0 C185.8,37.2 203.3,34.3 220.0,33.0 C236.7,31.7 253.7,31.8 270.0,34.0 C286.3,36.2 303.7,39.7 318.0,46.0 C332.3,52.3 345.3,61.7 356.0,72.0 C366.7,82.3 375.7,95.8 382.0,108.0 C388.3,120.2 392.7,133.3 394.0,145.0 C395.3,156.7 393.7,169.5 390.0,178.0 C386.3,186.5 379.5,192.0 372.0,196.0 C364.5,200.0 352.3,200.0 345.0,202.0 C337.7,204.0 331.2,204.0 328.0,208.0 C324.8,212.0 328.7,220.0 326.0,226.0 C323.3,232.0 318.8,239.7 312.0,244.0 C305.2,248.3 296.2,250.3 285.0,252.0 C273.8,253.7 258.3,254.3 245.0,254.0 C231.7,253.7 217.5,252.0 205.0,250.0 C192.5,248.0 180.8,245.0 170.0,242.0 C159.2,239.0 149.7,234.7 140.0,232.0 C130.3,229.3 121.2,227.7 112.0,226.0 C102.8,224.3 92.3,224.7 85.0,222.0 C77.7,219.3 72.2,215.3 68.0,210.0 C63.8,204.7 61.7,198.3 60.0,190.0 Z" fill="url(#aa-brain-rigid)" opacity="0"/>
+        <g class="aa-sulci"><path d="M262.0,38.0 C261.3,41.7 257.3,53.3 258.0,60.0 C258.7,66.7 266.5,71.3 266.0,78.0 C265.5,84.7 255.7,93.3 255.0,100.0 C254.3,106.7 262.8,111.3 262.0,118.0 C261.2,124.7 251.0,133.0 250.0,140.0 C249.0,147.0 255.0,156.7 256.0,160.0"/><path d="M300.0,45.0 C298.7,49.2 291.7,62.2 292.0,70.0 C292.3,77.8 302.3,84.0 302.0,92.0 C301.7,100.0 290.7,110.3 290.0,118.0 C289.3,125.7 298.3,131.0 298.0,138.0 C297.7,145.0 289.7,156.3 288.0,160.0"/><path d="M222.0,40.0 C221.3,43.7 217.0,54.7 218.0,62.0 C219.0,69.3 228.7,76.3 228.0,84.0 C227.3,91.7 215.0,100.7 214.0,108.0 C213.0,115.3 222.3,121.0 222.0,128.0 C221.7,135.0 213.7,146.3 212.0,150.0"/><path d="M305.0,70.0 C308.3,71.3 319.5,73.8 325.0,78.0 C330.5,82.2 332.2,91.3 338.0,95.0 C343.8,98.7 354.3,96.2 360.0,100.0 C365.7,103.8 370.0,115.0 372.0,118.0"/><path d="M300.0,128.0 C303.3,129.2 314.2,135.0 320.0,135.0 C325.8,135.0 329.7,127.2 335.0,128.0 C340.3,128.8 344.8,136.3 352.0,140.0 C359.2,143.7 373.7,148.3 378.0,150.0"/><path d="M340.0,58.0 C341.0,60.7 347.0,69.0 346.0,74.0 C345.0,79.0 336.0,85.7 334.0,88.0"/><path d="M366.0,128.0 C367.7,130.3 375.0,136.7 376.0,142.0 C377.0,147.3 372.7,157.0 372.0,160.0"/><path d="M328.0,160.0 C330.8,161.3 339.0,165.3 345.0,168.0 C351.0,170.7 360.8,174.7 364.0,176.0"/><path d="M285.0,176.0 C287.5,174.7 294.5,168.0 300.0,168.0 C305.5,168.0 315.0,174.7 318.0,176.0"/><path d="M272.0,48.0 C273.3,50.3 279.3,57.3 280.0,62.0 C280.7,66.7 276.7,73.7 276.0,76.0"/><path d="M240.0,52.0 C239.3,55.0 235.3,64.7 236.0,70.0 C236.7,75.3 243.7,79.7 244.0,84.0 C244.3,88.3 239.0,94.0 238.0,96.0"/><path d="M212.0,104.0 C208.3,105.3 197.0,111.3 190.0,112.0 C183.0,112.7 176.7,106.3 170.0,108.0 C163.3,109.7 157.0,118.7 150.0,122.0 C143.0,125.3 134.7,124.0 128.0,128.0 C121.3,132.0 113.0,143.0 110.0,146.0"/><path d="M182.0,50.0 C182.7,53.3 187.0,63.7 186.0,70.0 C185.0,76.3 177.7,85.0 176.0,88.0"/><path d="M150.0,68.0 C148.3,70.7 140.5,78.7 140.0,84.0 C139.5,89.3 145.8,97.3 147.0,100.0"/><path d="M196.0,134.0 C193.5,135.8 182.7,140.7 181.0,145.0 C179.3,149.3 185.2,157.5 186.0,160.0"/><path d="M160.0,140.0 C158.3,142.0 150.3,147.8 150.0,152.0 C149.7,156.2 156.7,162.8 158.0,165.0"/><path d="M96.0,112.0 C94.7,115.7 87.7,127.7 88.0,134.0 C88.3,140.3 99.0,144.7 98.0,150.0 C97.0,155.3 84.7,163.3 82.0,166.0"/><path d="M122.0,150.0 C119.3,152.5 107.0,160.0 106.0,165.0 C105.0,170.0 117.0,174.8 116.0,180.0 C115.0,185.2 102.7,193.3 100.0,196.0"/><path d="M74.0,186.0 C76.7,187.7 89.0,192.0 90.0,196.0 C91.0,200.0 81.7,207.7 80.0,210.0"/><path d="M272.0,96.0 C273.7,98.3 281.7,105.3 282.0,110.0 C282.3,114.7 275.3,121.7 274.0,124.0"/><path d="M238.0,118.0 C236.7,120.3 230.3,127.3 230.0,132.0 C229.7,136.7 235.0,143.7 236.0,146.0"/><path d="M328.0,206.0 C323.3,203.7 309.7,196.2 300.0,192.0 C290.3,187.8 280.0,184.2 270.0,181.0 C260.0,177.8 249.2,175.2 240.0,173.0 C230.8,170.8 222.5,170.2 215.0,168.0 C207.5,165.8 200.8,163.5 195.0,160.0 C189.2,156.5 182.5,149.2 180.0,147.0"/><path d="M320.0,222.0 C315.8,220.8 304.2,217.0 295.0,215.0 C285.8,213.0 275.0,211.7 265.0,210.0 C255.0,208.3 245.0,206.8 235.0,205.0 C225.0,203.2 214.2,201.2 205.0,199.0 C195.8,196.8 187.5,195.2 180.0,192.0 C172.5,188.8 163.3,182.0 160.0,180.0"/><path d="M306.0,240.0 C300.3,239.7 283.0,239.3 272.0,238.0 C261.0,236.7 251.0,233.7 240.0,232.0 C229.0,230.3 217.3,229.7 206.0,228.0 C194.7,226.3 182.0,224.3 172.0,222.0 C162.0,219.7 150.3,215.3 146.0,214.0"/><path d="M282.0,224.0 C280.3,225.3 273.7,230.7 272.0,232.0"/><path d="M232.0,214.0 C230.3,215.7 223.7,222.3 222.0,224.0"/><path d="M190.0,207.0 C188.7,208.5 183.3,214.5 182.0,216.0"/></g>
+        <path d="M328.0,206.0 C323.3,203.7 309.7,196.2 300.0,192.0 C290.3,187.8 280.0,184.2 270.0,181.0 C260.0,177.8 249.2,175.2 240.0,173.0 C230.8,170.8 222.5,170.2 215.0,168.0 C207.5,165.8 200.8,163.5 195.0,160.0 C189.2,156.5 182.5,149.2 180.0,147.0" class="aa-fissure"/>
+        <path d="M60.0,190.0 C58.3,181.7 56.7,170.8 58.0,160.0 C59.3,149.2 62.7,136.3 68.0,125.0 C73.3,113.7 80.5,102.5 90.0,92.0 C99.5,81.5 111.7,70.3 125.0,62.0 C138.3,53.7 154.2,46.8 170.0,42.0 C185.8,37.2 203.3,34.3 220.0,33.0 C236.7,31.7 253.7,31.8 270.0,34.0 C286.3,36.2 303.7,39.7 318.0,46.0 C332.3,52.3 345.3,61.7 356.0,72.0 C366.7,82.3 375.7,95.8 382.0,108.0 C388.3,120.2 392.7,133.3 394.0,145.0 C395.3,156.7 393.7,169.5 390.0,178.0 C386.3,186.5 379.5,192.0 372.0,196.0 C364.5,200.0 352.3,200.0 345.0,202.0 C337.7,204.0 331.2,204.0 328.0,208.0 C324.8,212.0 328.7,220.0 326.0,226.0 C323.3,232.0 318.8,239.7 312.0,244.0 C305.2,248.3 296.2,250.3 285.0,252.0 C273.8,253.7 258.3,254.3 245.0,254.0 C231.7,253.7 217.5,252.0 205.0,250.0 C192.5,248.0 180.8,245.0 170.0,242.0 C159.2,239.0 149.7,234.7 140.0,232.0 C130.3,229.3 121.2,227.7 112.0,226.0 C102.8,224.3 92.3,224.7 85.0,222.0 C77.7,219.3 72.2,215.3 68.0,210.0 C63.8,204.7 61.7,198.3 60.0,190.0 Z" class="aa-brain-outline" fill="none"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Adversity cue -->
+  <g id="aa-adversity" opacity="0">
+    <path d="M836,176 l-10,18 h10 l-8,18 l22,-24 h-11 l9,-12 z" fill="#d9575a"/>
+    <text x="840" y="230" class="aa-cue aa-red" text-anchor="middle">adversity</text>
+  </g>
+
+  <!-- Corrective arrow -->
+  <g id="aa-correct" opacity="0">
+    <line id="aa-correct-line" x1="760" y1="232" x2="560" y2="232" class="aa-arrow" marker-end="url(#aa-head)"/>
+    <text x="660" y="260" class="aa-cue aa-blue" text-anchor="middle">restoring flexibility</text>
+  </g>
+
+  <!-- ===== Closed-loop neurofeedback ===== -->
+  <g id="aa-loop" opacity="0" transform="translate(0 44)">
+    <text x="480" y="262" class="aa-title" text-anchor="middle">Closed-loop neurofeedback</text>
+
+    <!-- Arcs: head -> decoder -> feedback -> head  (circle centre 480,400, r 120) -->
+    <path id="aa-arc1" class="aa-arc" d="M372.1,452.6 A120,120 0 0 0 427.4,507.9" marker-end="url(#aa-head)"/>
+    <path id="aa-arc2" class="aa-arc" d="M532.6,507.9 A120,120 0 0 0 587.9,452.6" marker-end="url(#aa-head)"/>
+    <path id="aa-arc3" class="aa-arc" d="M587.9,347.4 A120,120 0 0 0 372.1,347.4" marker-end="url(#aa-head)"/>
+    <circle id="aa-pulse" r="5" fill="#2f6fd0" opacity="0"/>
+
+    <!-- Node 1: participant with sensor cap -->
+    <g id="aa-node1" class="aa-node" transform="translate(360 400)">
+      <circle r="42" class="aa-node-bg"/>
+      <g transform="translate(-2 -2)">
+        <!-- wires down the back of the neck -->
+        <g fill="none" stroke="#3b6fd0" stroke-width="0.9" stroke-linecap="round">
+          <path d="M-20,6 C-22,16 -21,24 -22,32"/>
+          <path d="M-18,8 C-19,18 -18,25 -19,33"/>
+          <path d="M-16,10 C-16,19 -15,26 -16,32"/>
+          <path d="M-22,2 C-24,14 -24,22 -25,30"/>
+        </g>
+        <!-- face / neck -->
+        <path d="M-12,34 C-12,27 -18,22 -22,10 C-26,-6 -22,-24 -6,-30 C8,-34 21,-27 22,-14 L22,-7 C24,-3 28,1 27,4 C26,6 23,6 23,7 C24,9 23,11 22,12 C23,14 22,17 19,18 C19,22 16,24 11,24 L4,24 L4,34 Z" fill="#f7b98e"/>
+        <!-- cap -->
+        <path d="M-24,13 C-29,-6 -23,-27 -5,-32 C10,-35 21,-27 21,-16 C17,-11 11,-9 5,-7 C1,-3 -1,5 -5,10 C-9,16 -18,19 -24,13 Z" fill="#141414"/>
+        <!-- cap seams -->
+        <g fill="none" stroke="#3a4a6b" stroke-width="0.6" opacity="0.9">
+          <path d="M-20,-20 C-12,-24 0,-26 12,-22"/>
+          <path d="M-24,-6 C-14,-14 0,-16 14,-12"/>
+          <path d="M-22,6 C-14,-4 -6,-6 4,-6"/>
+        </g>
+        <!-- ear -->
+        <ellipse cx="-4" cy="2" rx="5.5" ry="7" fill="#f7b98e" stroke="#141414" stroke-width="1.6"/>
+        <!-- chin strap -->
+        <path d="M-1,9 C3,16 8,21 13,24" fill="none" stroke="#e5e7eb" stroke-width="2.4" stroke-linecap="round"/>
+        <!-- electrodes -->
+        <g fill="#f5a524">
+          <circle cx="-14" cy="-24" r="1.8"/><circle cx="-5" cy="-28" r="1.8"/><circle cx="5" cy="-29" r="1.8"/><circle cx="14" cy="-24" r="1.8"/>
+          <circle cx="-20" cy="-15" r="1.8"/><circle cx="-11" cy="-18" r="1.8"/><circle cx="-1" cy="-20" r="1.8"/><circle cx="9" cy="-19" r="1.8"/><circle cx="18" cy="-16" r="1.8"/>
+          <circle cx="-24" cy="-5" r="1.8"/><circle cx="-15" cy="-9" r="1.8"/><circle cx="-6" cy="-11" r="1.8"/><circle cx="4" cy="-12" r="1.8"/><circle cx="13" cy="-10" r="1.8"/>
+          <circle cx="-23" cy="5" r="1.8"/><circle cx="-14" cy="1" r="1.8"/><circle cx="-12" cy="10" r="1.8"/><circle cx="-19" cy="13" r="1.8"/>
+        </g>
+      </g>
+      <text x="-56" y="6" class="aa-node-label" text-anchor="end">Recording brain activity</text>
+    </g>
+
+    <!-- Node 2: real-time decoding -->
+    <g id="aa-node2" class="aa-node" transform="translate(480 520)">
+      <circle r="42" class="aa-node-bg"/>
+      <rect x="-26" y="-22" width="52" height="34" rx="4" fill="#fff" stroke="#334155" stroke-width="2"/>
+      <path id="aa-signal" d="M-21,-4 L-15,-10 L-10,2 L-5,-14 L0,4 L5,-8 L10,-2 L15,-12 L21,-6" fill="none" stroke="#2f6fd0" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M-6,12 L-8,20 H8 L6,12" fill="#334155"/>
+      <rect x="-14" y="20" width="28" height="3" rx="1.5" fill="#334155"/>
+      <text y="70" class="aa-node-label" text-anchor="middle">Real-time decoding</text>
+    </g>
+
+    <!-- Node 3: feedback display -->
+    <g id="aa-node3" class="aa-node" transform="translate(600 400)">
+      <circle r="42" class="aa-node-bg"/>
+      <rect x="-26" y="-22" width="52" height="38" rx="4" fill="#fff" stroke="#334155" stroke-width="2"/>
+      <rect x="-6" y="-16" width="12" height="26" rx="2" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+      <rect id="aa-gauge" x="-4.5" y="8.5" width="9" height="0" rx="1" fill="#2f6fd0"/>
+      <path d="M-5,16 L-7,24 H7 L5,16" fill="#334155"/>
+      <text x="56" y="6" class="aa-node-label" text-anchor="start">Reinforcing feedback</text>
+    </g>
+  </g>
+</svg>
+<button type="button" class="aa-replay" aria-label="Replay animation">↻ Replay</button>
+</figure>
+
+<style>
+.approach-anim { position: relative; margin: 0 0 2em; max-width: 960px; }
+.approach-anim svg { display: block; width: 100%; height: auto; font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
+.approach-anim .aa-label { font-size: 22px; font-weight: 600; fill: #1e293b; }
+.approach-anim .aa-sublabel { font-size: 16px; font-weight: 400; fill: #64748b; }
+.approach-anim .aa-blue { fill: #2f6fd0; }
+.approach-anim .aa-red { fill: #b91c1c; }
+.approach-anim .aa-boundary { stroke: #475569; stroke-width: 1.5; stroke-dasharray: 4 4; }
+.approach-anim .aa-brain-outline { stroke: #77749f; stroke-width: 0.9; vector-effect: non-scaling-stroke; }
+.approach-anim .aa-folia path { fill: none; stroke: #6e6b92; stroke-width: 0.35; vector-effect: non-scaling-stroke; }
+.approach-anim .aa-sulci path { fill: none; stroke: #5d5a7e; stroke-width: 0.5; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.approach-anim .aa-fissure { fill: none; stroke: #6d6a99; stroke-width: 1.4; stroke-linecap: round; vector-effect: non-scaling-stroke; opacity: 0.8; }
+.approach-anim .aa-cue { font-size: 17px; font-weight: 500; font-style: italic; }
+.approach-anim .aa-arrow { stroke: #475569; stroke-width: 5; stroke-linecap: round; }
+.approach-anim .aa-title { font-size: 21px; font-weight: 600; fill: #1e293b; }
+.approach-anim .aa-arc { fill: none; stroke: #94a3b8; stroke-width: 2; }
+.approach-anim .aa-node-bg { fill: #f8fafc; stroke: #e2e8f0; stroke-width: 1.5; }
+.approach-anim .aa-node-label { font-size: 17px; font-weight: 500; fill: #334155; }
+.approach-anim .aa-replay {
+  position: absolute; right: 0; bottom: 0; border: 1px solid #cbd5e1; background: #fff; color: #475569;
+  font: 500 13px/1 "Inter", sans-serif; padding: 6px 10px; border-radius: 6px; cursor: pointer; opacity: 0; transition: opacity .3s;
+}
+.approach-anim .aa-replay.aa-show { opacity: 1; }
+.approach-anim .aa-replay:hover { background: #f1f5f9; }
+</style>
+
+<script>
+(function () {
+  var fig = document.currentScript.previousElementSibling.previousElementSibling;
+  if (!fig || !fig.classList.contains('approach-anim')) fig = document.querySelector('.approach-anim');
+  var $ = function (id) { return fig.querySelector('#' + id); };
+  var brain = $('aa-brain'), rigidFills = fig.querySelectorAll('.aa-rigid'), adversity = $('aa-adversity'),
+      correct = $('aa-correct'), correctLine = $('aa-correct-line'), loop = $('aa-loop'),
+      pulse = $('aa-pulse'), gauge = $('aa-gauge'),
+      nodes = [$('aa-node1'), $('aa-node2'), $('aa-node3')],
+      arcs = [$('aa-arc1'), $('aa-arc2'), $('aa-arc3')],
+      replay = fig.querySelector('.aa-replay');
+
+  var CENTER = 480, RIGID = 755, Y = 123, SCALE = 1;
+  var ease = function (t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  var clamp = function (v) { return Math.max(0, Math.min(1, v)); };
+  var seg = function (t, a, b) { return clamp((t - a) / (b - a)); };
+  var lerp = function (a, b, p) { return a + (b - a) * p; };
+  var arcLens = arcs.map(function (a) { return a.getTotalLength(); });
+  var DURATION = 14.0;
+
+  function render(t) {
+    // Brain position: drift right (2.6-5.0s), back to centre (9.6-12.4s)
+    var out = ease(seg(t, 2.6, 5.0)), back = ease(seg(t, 9.6, 12.4));
+    var x = lerp(CENTER, RIGID, out - back);
+    var breathe = SCALE * (1 + 0.025 * Math.sin(t * 2.4));
+    var jitter = (out > 0.98 && back < 0.02) ? Math.sin(t * 40) * 0.6 : 0;
+    brain.setAttribute('transform', 'translate(' + (x + jitter) + ' ' + Y + ') scale(' + breathe + ')');
+    for (var r = 0; r < rigidFills.length; r++) rigidFills[r].setAttribute('opacity', (out - back).toFixed(3));
+
+    adversity.setAttribute('opacity', (seg(t, 2.3, 2.9) - seg(t, 8.8, 9.4)).toFixed(3));
+
+    // Loop builds up (5.4-8.4s)
+    loop.setAttribute('opacity', seg(t, 5.4, 6.0).toFixed(3));
+    nodes.forEach(function (n, i) {
+      var p = ease(seg(t, 5.6 + i * 0.5, 6.2 + i * 0.5));
+      n.style.opacity = p;
+      n.style.transformBox = 'fill-box';
+    });
+    arcs.forEach(function (a, i) {
+      var p = seg(t, 6.0 + i * 0.5, 6.6 + i * 0.5);
+      a.style.strokeDasharray = arcLens[i];
+      a.style.strokeDashoffset = arcLens[i] * (1 - p);
+      if (p > 0.95) a.setAttribute('marker-end', 'url(#aa-head)'); else a.removeAttribute('marker-end');
+    });
+
+    // Signal pulse circulating around the loop once it is built
+    if (t > 7.6) {
+      var cyc = ((t - 7.6) / 2.2) % 1, which = Math.floor(cyc * 3), local = cyc * 3 - which;
+      var pt = arcs[which].getPointAtLength(arcLens[which] * local);
+      pulse.setAttribute('cx', pt.x); pulse.setAttribute('cy', pt.y);
+      pulse.setAttribute('opacity', 0.9);
+    } else pulse.setAttribute('opacity', 0);
+
+    // Feedback gauge rises as the brain is guided back
+    var g = 6 + 16 * back + 2 * Math.sin(t * 3) * (t > 7.6 ? 1 : 0);
+    gauge.setAttribute('height', Math.max(0, g * seg(t, 6.6, 7.2)).toFixed(2));
+    gauge.setAttribute('y', (8.5 - Math.max(0, g * seg(t, 6.6, 7.2))).toFixed(2));
+
+    // Corrective arrow (8.8-9.6s draws in)
+    var c = ease(seg(t, 8.8, 9.6));
+    correct.setAttribute('opacity', (c - seg(t, 12.6, 13.2) * 0.0).toFixed(3));
+    correctLine.setAttribute('x2', lerp(760, 560, c).toFixed(1));
+
+  }
+
+  var start = null, running = false;
+  function frame(now) {
+    if (start === null) start = now;
+    var t = (now - start) / 1000;
+    if (t >= DURATION) { render(DURATION); running = false; replay.classList.add('aa-show'); return; }
+    render(t);
+    requestAnimationFrame(frame);
+  }
+  function play() {
+    if (running) return;
+    running = true; start = null; replay.classList.remove('aa-show');
+    requestAnimationFrame(frame);
+  }
+  replay.addEventListener('click', play);
+
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) { render(DURATION); replay.classList.add('aa-show'); return; }
+  render(0);
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) { play(); io.disconnect(); }
+    }, { threshold: 0.4 });
+    io.observe(fig);
+  } else play();
+})();
+</script>

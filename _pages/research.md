@@ -6,6 +6,8 @@ classes:
   - research-page
 ---
 
+{% include approach-animation.html %}
+
 To navigate complex environments, our brains must form lasting structured knowledge, while remaining plastic enough to update this knowledge as circumstances change. Disruptions to this balance can lead to cognitive rigidity – a difficulty to modify our structured knowledge and the internal models that rely on it. My research examines how the brain supports cognitive plasticity and how it can be enhanced: I use behavioral methods, time-resolved neuroimaging and decoding techniques to understand how the brain flexibly updates structured knowledge in naturalistic contexts. I also use closed-loop neurofeedback to modulate internal models, driving the brain toward more adaptive and healthy functioning.
 
 ## I. Why is information congruent with prior knowledge learned more easily?
