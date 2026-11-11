@@ -3,13 +3,13 @@
 <svg viewBox="0 0 960 655" role="img" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="aa-spectrum" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0" stop-color="#0f172a"/>
-      <stop offset="0.13" stop-color="#36507a"/>
-      <stop offset="0.25" stop-color="#8db8e6"/>
-      <stop offset="0.62" stop-color="#9cc2ea"/>
-      <stop offset="0.75" stop-color="#eab2b2"/>
-      <stop offset="0.88" stop-color="#d9575a"/>
-      <stop offset="1" stop-color="#a61b1f"/>
+      <stop offset="0" stop-color="#a61b1f"/>
+      <stop offset="0.12" stop-color="#d9575a"/>
+      <stop offset="0.25" stop-color="#9fd3ad"/>
+      <stop offset="0.5" stop-color="#6fbf86"/>
+      <stop offset="0.75" stop-color="#a9cdb3"/>
+      <stop offset="0.88" stop-color="#8797ad"/>
+      <stop offset="1" stop-color="#4f5f78"/>
     </linearGradient>
     <radialGradient id="aa-brain-calm" cx="0.55" cy="0.5" r="0.75">
       <stop offset="0" stop-color="#eeedf9"/>
@@ -17,8 +17,8 @@
       <stop offset="1" stop-color="#aeaada"/>
     </radialGradient>
     <radialGradient id="aa-brain-rigid" cx="0.55" cy="0.5" r="0.75">
-      <stop offset="0" stop-color="#ffecec"/>
-      <stop offset="1" stop-color="#e58f93"/>
+      <stop offset="0" stop-color="#eef1f5"/>
+      <stop offset="1" stop-color="#9aa7ba"/>
     </radialGradient>
     <filter id="aa-shadow" x="-30%" y="-30%" width="160%" height="170%">
       <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1e293b" flood-opacity="0.18"/>
@@ -30,12 +30,12 @@
 
   <!-- ===== Spectrum ===== -->
   <g class="aa-spectrum">
-    <text x="120" y="50" class="aa-label" text-anchor="start">Overflexible</text>
-    <text x="120" y="72" class="aa-sublabel" text-anchor="start">internal model</text>
-    <text x="480" y="50" class="aa-label aa-blue" text-anchor="middle">Adaptive</text>
-    <text x="480" y="72" class="aa-sublabel" text-anchor="middle">flexible yet stable</text>
-    <text x="840" y="50" class="aa-label aa-red" text-anchor="end">Rigid</text>
-    <text x="840" y="72" class="aa-sublabel" text-anchor="end">internal model</text>
+    <text x="120" y="50" class="aa-label aa-overflex" text-anchor="start">Overflexible</text>
+    <text x="120" y="72" class="aa-sublabel" text-anchor="start">cognition</text>
+    <text x="480" y="50" class="aa-label aa-adaptive" text-anchor="middle">Adaptive</text>
+    <text x="480" y="72" class="aa-sublabel" text-anchor="middle">cognition</text>
+    <text x="840" y="50" class="aa-label aa-rigidc" text-anchor="end">Rigid</text>
+    <text x="840" y="72" class="aa-sublabel" text-anchor="end">cognition</text>
 
     <rect x="120" y="112" width="720" height="22" rx="11" fill="url(#aa-spectrum)"/>
     <line x1="300" x2="300" y1="96" y2="152" class="aa-boundary"/>
@@ -66,14 +66,14 @@
 
   <!-- Adversity cue -->
   <g id="aa-adversity" opacity="0">
-    <path d="M836,176 l-10,18 h10 l-8,18 l22,-24 h-11 l9,-12 z" fill="#d9575a"/>
-    <text x="840" y="230" class="aa-cue aa-red" text-anchor="middle">adversity</text>
+    <path d="M836,176 l-10,18 h10 l-8,18 l22,-24 h-11 l9,-12 z" fill="#d97706"/>
+    <text x="840" y="230" class="aa-cue aa-amber" text-anchor="middle">adversity</text>
   </g>
 
   <!-- Corrective arrow -->
   <g id="aa-correct" opacity="0">
     <line id="aa-correct-line" x1="760" y1="232" x2="560" y2="232" class="aa-arrow" marker-end="url(#aa-head)"/>
-    <text x="660" y="260" class="aa-cue aa-blue" text-anchor="middle">restoring flexibility</text>
+    <text x="660" y="260" class="aa-cue aa-adaptive" text-anchor="middle">restoring flexibility</text>
   </g>
 
   <!-- ===== Closed-loop neurofeedback ===== -->
@@ -81,42 +81,57 @@
     <text x="480" y="262" class="aa-title" text-anchor="middle">Closed-loop neurofeedback</text>
 
     <!-- Arcs: head -> decoder -> feedback -> head  (circle centre 480,400, r 120) -->
-    <path id="aa-arc1" class="aa-arc" d="M372.1,452.6 A120,120 0 0 0 427.4,507.9" marker-end="url(#aa-head)"/>
-    <path id="aa-arc2" class="aa-arc" d="M532.6,507.9 A120,120 0 0 0 587.9,452.6" marker-end="url(#aa-head)"/>
+    <path id="aa-arc1" class="aa-arc" d="M372.1,452.6 A120,120 0 0 0 411.2,498.3" marker-end="url(#aa-head)"/>
+    <path id="aa-arc2" class="aa-arc" d="M548.8,498.3 A120,120 0 0 0 587.9,452.6" marker-end="url(#aa-head)"/>
     <path id="aa-arc3" class="aa-arc" d="M587.9,347.4 A120,120 0 0 0 372.1,347.4" marker-end="url(#aa-head)"/>
     <circle id="aa-pulse" r="5" fill="#2f6fd0" opacity="0"/>
 
     <!-- Node 1: participant with sensor cap -->
     <g id="aa-node1" class="aa-node" transform="translate(360 400)">
       <circle r="42" class="aa-node-bg"/>
-      <g transform="translate(-2 -2)">
-        <!-- wires down the back of the neck -->
-        <g fill="none" stroke="#3b6fd0" stroke-width="0.9" stroke-linecap="round">
-          <path d="M-20,6 C-22,16 -21,24 -22,32"/>
-          <path d="M-18,8 C-19,18 -18,25 -19,33"/>
-          <path d="M-16,10 C-16,19 -15,26 -16,32"/>
-          <path d="M-22,2 C-24,14 -24,22 -25,30"/>
+      <defs>
+        <linearGradient id="aa-skin" x1="0" x2="1" y1="0" y2="0">
+          <stop offset="0" stop-color="#e9a982"/>
+          <stop offset="0.55" stop-color="#f6c4a2"/>
+          <stop offset="1" stop-color="#f3bb96"/>
+        </linearGradient>
+      </defs>
+      <g transform="translate(-3 -1)">
+        <!-- electrode wires -->
+        <g fill="none" stroke="#3b6fd0" stroke-width="0.8" stroke-linecap="round" opacity="0.9">
+          <path d="M-22,12 C-24,22 -23,30 -25,38"/>
+          <path d="M-19,15 C-20,24 -19,31 -21,39"/>
+          <path d="M-16,17 C-16,25 -15,32 -17,39"/>
         </g>
-        <!-- face / neck -->
-        <path d="M-12,34 C-12,27 -18,22 -22,10 C-26,-6 -22,-24 -6,-30 C8,-34 21,-27 22,-14 L22,-7 C24,-3 28,1 27,4 C26,6 23,6 23,7 C24,9 23,11 22,12 C23,14 22,17 19,18 C19,22 16,24 11,24 L4,24 L4,34 Z" fill="#f7b98e"/>
+        <!-- head, face and neck -->
+        <path fill="url(#aa-skin)" d="M-13,38 C-13,30 -17,24 -21,16 C-27,3 -26,-16 -16,-26 C-8,-33 6,-35 15,-29 C21,-24 24,-17 24.5,-9 C24.8,-6 25.6,-3.5 26.8,-1.5 C28.6,1.5 31.5,5.5 32.6,8.4 C33.2,10 32,11.2 29.6,11.4 C29.4,12.6 30,13.6 29.6,14.6 C30.8,15.6 30.8,16.8 29.6,17.6 C30.4,18.6 30,20 28.4,20.6 C28,22 28.4,23.6 27.8,25 C26.6,28.6 23.4,30 19.6,30 C15.8,30 12.4,29 10.4,30.4 C9.4,32.6 9.6,35.4 10,38 Z"/>
+        <!-- jaw shadow and facial details -->
+        <path d="M10.4,30.4 C14,27 18,27.5 21,24" fill="none" stroke="#d99572" stroke-width="0.9" stroke-linecap="round" opacity="0.8"/>
+        <!-- open eye, looking ahead at the feedback screen -->
+        <path d="M18.8,-3.4 C20.4,-5.2 22.8,-5.3 24.2,-3.6 C22.8,-2 20.4,-1.9 18.8,-3.4 Z" fill="#ffffff"/>
+        <circle cx="22.6" cy="-3.6" r="1.25" fill="#3b2a22"/>
+        <circle cx="23" cy="-4" r="0.35" fill="#ffffff"/>
+        <path d="M18.6,-3.5 C20.3,-5.4 22.9,-5.5 24.4,-3.6" fill="none" stroke="#5b3b2e" stroke-width="0.9" stroke-linecap="round"/>
+        <path d="M18.4,-7.4 C20.4,-8.6 23,-8.4 24.6,-7.2" fill="none" stroke="#5b3b2e" stroke-width="0.9" stroke-linecap="round" opacity="0.7"/>
+        <path d="M26.6,16.1 C27.6,16.5 28.6,16.5 29.3,16.1" fill="none" stroke="#c97a62" stroke-width="0.8" stroke-linecap="round"/>
         <!-- cap -->
-        <path d="M-24,13 C-29,-6 -23,-27 -5,-32 C10,-35 21,-27 21,-16 C17,-11 11,-9 5,-7 C1,-3 -1,5 -5,10 C-9,16 -18,19 -24,13 Z" fill="#141414"/>
-        <!-- cap seams -->
-        <g fill="none" stroke="#3a4a6b" stroke-width="0.6" opacity="0.9">
-          <path d="M-20,-20 C-12,-24 0,-26 12,-22"/>
-          <path d="M-24,-6 C-14,-14 0,-16 14,-12"/>
-          <path d="M-22,6 C-14,-4 -6,-6 4,-6"/>
+        <path fill="#151515" d="M-23.5,17 C-29,2 -27.5,-17 -16.5,-27 C-7.5,-34.5 7,-35.5 16,-29.5 C21.2,-25.6 23.4,-19.8 23.4,-13.6 C16,-12.6 9,-9.6 4.6,-4.6 C1.6,-1 0.2,5 -2.6,9.6 C-7.6,16.4 -16.6,20.6 -23.5,17 Z"/>
+        <g fill="none" stroke="#33415e" stroke-width="0.55">
+          <path d="M-20,-20 C-11,-25 2,-27 14,-23"/>
+          <path d="M-25,-6 C-14,-14 1,-16 16,-14"/>
+          <path d="M-23,7 C-15,-2 -6,-5 3,-5"/>
         </g>
         <!-- ear -->
-        <ellipse cx="-4" cy="2" rx="5.5" ry="7" fill="#f7b98e" stroke="#141414" stroke-width="1.6"/>
+        <path d="M-2.2,-3.2 C1.6,-4.4 4.6,-1.4 4.2,2.6 C3.8,6.4 1.6,9.2 -1.6,9.6 C-3.6,9.8 -4.6,8 -4.4,5.4 C-4.2,2 -5,-2.2 -2.2,-3.2 Z" fill="url(#aa-skin)" stroke="#151515" stroke-width="1.4"/>
+        <path d="M-0.4,0 C1.6,0.6 2,3.4 0.4,5.6" fill="none" stroke="#d99572" stroke-width="0.9" stroke-linecap="round"/>
         <!-- chin strap -->
-        <path d="M-1,9 C3,16 8,21 13,24" fill="none" stroke="#e5e7eb" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M-1.6,9.6 C3,17 9.6,25.4 16.6,29.6" fill="none" stroke="#e5e7eb" stroke-width="2.2" stroke-linecap="round"/>
         <!-- electrodes -->
         <g fill="#f5a524">
-          <circle cx="-14" cy="-24" r="1.8"/><circle cx="-5" cy="-28" r="1.8"/><circle cx="5" cy="-29" r="1.8"/><circle cx="14" cy="-24" r="1.8"/>
-          <circle cx="-20" cy="-15" r="1.8"/><circle cx="-11" cy="-18" r="1.8"/><circle cx="-1" cy="-20" r="1.8"/><circle cx="9" cy="-19" r="1.8"/><circle cx="18" cy="-16" r="1.8"/>
-          <circle cx="-24" cy="-5" r="1.8"/><circle cx="-15" cy="-9" r="1.8"/><circle cx="-6" cy="-11" r="1.8"/><circle cx="4" cy="-12" r="1.8"/><circle cx="13" cy="-10" r="1.8"/>
-          <circle cx="-23" cy="5" r="1.8"/><circle cx="-14" cy="1" r="1.8"/><circle cx="-12" cy="10" r="1.8"/><circle cx="-19" cy="13" r="1.8"/>
+          <circle cx="-13" cy="-25" r="1.7"/><circle cx="-4" cy="-29.5" r="1.7"/><circle cx="6" cy="-30" r="1.7"/><circle cx="14.5" cy="-25.5" r="1.7"/>
+          <circle cx="-20" cy="-16" r="1.7"/><circle cx="-10.5" cy="-19.5" r="1.7"/><circle cx="-0.5" cy="-21.5" r="1.7"/><circle cx="9.5" cy="-20.5" r="1.7"/><circle cx="19" cy="-17.5" r="1.7"/>
+          <circle cx="-24.5" cy="-5" r="1.7"/><circle cx="-15" cy="-9.5" r="1.7"/><circle cx="-5.5" cy="-12" r="1.7"/><circle cx="4.5" cy="-12.5" r="1.7"/><circle cx="13.5" cy="-11" r="1.7"/>
+          <circle cx="-23.5" cy="6" r="1.7"/><circle cx="-14" cy="1" r="1.7"/><circle cx="-10" cy="10.5" r="1.7"/><circle cx="-18.5" cy="14" r="1.7"/>
         </g>
       </g>
       <text x="-56" y="6" class="aa-node-label" text-anchor="end">Recording brain activity</text>
@@ -124,12 +139,18 @@
 
     <!-- Node 2: real-time decoding -->
     <g id="aa-node2" class="aa-node" transform="translate(480 520)">
-      <circle r="42" class="aa-node-bg"/>
-      <rect x="-26" y="-22" width="52" height="34" rx="4" fill="#fff" stroke="#334155" stroke-width="2"/>
-      <path id="aa-signal" d="M-21,-4 L-15,-10 L-10,2 L-5,-14 L0,4 L5,-8 L10,-2 L15,-12 L21,-6" fill="none" stroke="#2f6fd0" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
-      <path d="M-6,12 L-8,20 H8 L6,12" fill="#334155"/>
-      <rect x="-14" y="20" width="28" height="3" rx="1.5" fill="#334155"/>
-      <text y="70" class="aa-node-label" text-anchor="middle">Real-time decoding</text>
+      <circle r="54" class="aa-node-bg"/>
+      <rect x="-40" y="-31" width="80" height="51" rx="4" fill="#fff" stroke="#334155" stroke-width="2"/>
+      <g class="aa-plot-axes">
+        <line x1="-32" y1="-25" x2="-32" y2="12"/>
+        <line x1="-32" y1="12" x2="34" y2="12"/>
+        <line x1="-34" y1="-16" x2="-32" y2="-16"/><line x1="-34" y1="-4" x2="-32" y2="-4"/>
+        <line x1="-23.8" y1="12" x2="-23.8" y2="14"/><line x1="-17.6" y1="12" x2="-17.6" y2="14"/><line x1="-11.4" y1="12" x2="-11.4" y2="14"/><line x1="-5.2" y1="12" x2="-5.2" y2="14"/><line x1="1.0" y1="12" x2="1.0" y2="14"/><line x1="7.2" y1="12" x2="7.2" y2="14"/><line x1="13.4" y1="12" x2="13.4" y2="14"/><line x1="19.6" y1="12" x2="19.6" y2="14"/><line x1="25.8" y1="12" x2="25.8" y2="14"/><line x1="32.0" y1="12" x2="32.0" y2="14"/>
+      </g>
+      <polyline id="aa-trace" points="" fill="none" stroke="#2f6fd0" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M-7,20 L-9,29 H9 L7,20" fill="#334155"/>
+      <rect x="-17" y="29" width="34" height="3" rx="1.5" fill="#334155"/>
+      <text y="84" class="aa-node-label" text-anchor="middle">Real-time decoding of internal states</text>
     </g>
 
     <!-- Node 3: feedback display -->
@@ -137,9 +158,9 @@
       <circle r="42" class="aa-node-bg"/>
       <rect x="-26" y="-22" width="52" height="38" rx="4" fill="#fff" stroke="#334155" stroke-width="2"/>
       <rect x="-6" y="-16" width="12" height="26" rx="2" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
-      <rect id="aa-gauge" x="-4.5" y="8.5" width="9" height="0" rx="1" fill="#2f6fd0"/>
+      <rect id="aa-gauge" x="-4.5" y="8.5" width="9" height="0" rx="1" fill="#6f7f98"/>
       <path d="M-5,16 L-7,24 H7 L5,16" fill="#334155"/>
-      <text x="56" y="6" class="aa-node-label" text-anchor="start">Reinforcing feedback</text>
+      <text class="aa-node-label" text-anchor="start"><tspan x="56" y="-4">Coupling reinforcing feedback</tspan><tspan x="56" y="17">with adaptive internal states</tspan></text>
     </g>
   </g>
 </svg>
@@ -150,9 +171,11 @@
 .approach-anim { position: relative; margin: 0 0 2em; max-width: 960px; }
 .approach-anim svg { display: block; width: 100%; height: auto; font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
 .approach-anim .aa-label { font-size: 22px; font-weight: 600; fill: #1e293b; }
-.approach-anim .aa-sublabel { font-size: 16px; font-weight: 400; fill: #64748b; }
-.approach-anim .aa-blue { fill: #2f6fd0; }
-.approach-anim .aa-red { fill: #b91c1c; }
+.approach-anim .aa-sublabel { font-size: 18px; font-weight: 400; fill: #64748b; }
+.approach-anim .aa-overflex { fill: #b91c1c; }
+.approach-anim .aa-adaptive { fill: #15803d; }
+.approach-anim .aa-rigidc { fill: #4f5f78; }
+.approach-anim .aa-amber { fill: #b45309; }
 .approach-anim .aa-boundary { stroke: #475569; stroke-width: 1.5; stroke-dasharray: 4 4; }
 .approach-anim .aa-brain-outline { stroke: #77749f; stroke-width: 0.9; vector-effect: non-scaling-stroke; }
 .approach-anim .aa-folia path { fill: none; stroke: #6e6b92; stroke-width: 0.35; vector-effect: non-scaling-stroke; }
@@ -162,6 +185,7 @@
 .approach-anim .aa-arrow { stroke: #475569; stroke-width: 5; stroke-linecap: round; }
 .approach-anim .aa-title { font-size: 21px; font-weight: 600; fill: #1e293b; }
 .approach-anim .aa-arc { fill: none; stroke: #94a3b8; stroke-width: 2; }
+.approach-anim .aa-plot-axes line { stroke: #64748b; stroke-width: 1; }
 .approach-anim .aa-node-bg { fill: #f8fafc; stroke: #e2e8f0; stroke-width: 1.5; }
 .approach-anim .aa-node-label { font-size: 17px; font-weight: 500; fill: #334155; }
 .approach-anim .aa-replay {
@@ -179,7 +203,7 @@
   var $ = function (id) { return fig.querySelector('#' + id); };
   var brain = $('aa-brain'), rigidFills = fig.querySelectorAll('.aa-rigid'), adversity = $('aa-adversity'),
       correct = $('aa-correct'), correctLine = $('aa-correct-line'), loop = $('aa-loop'),
-      pulse = $('aa-pulse'), gauge = $('aa-gauge'),
+      pulse = $('aa-pulse'), gauge = $('aa-gauge'), trace = $('aa-trace'),
       nodes = [$('aa-node1'), $('aa-node2'), $('aa-node3')],
       arcs = [$('aa-arc1'), $('aa-arc2'), $('aa-arc3')],
       replay = fig.querySelector('.aa-replay');
@@ -190,18 +214,55 @@
   var seg = function (t, a, b) { return clamp((t - a) / (b - a)); };
   var lerp = function (a, b, p) { return a + (b - a) * p; };
   var arcLens = arcs.map(function (a) { return a.getTotalLength(); });
-  var DURATION = 14.0;
+  var DURATION = 17.6;
+  var T0 = 7.6;                       // loop starts cycling: one full round per second
+  var WIN = 10, SPS = 5;              // plot shows the whole 10-second session, 5 samples per second
+  var PX0 = -30, SECW = 62 / WIN;     // plot x-range inside the decoding screen
+  var outAt = function (t) { return ease(seg(t, 2.6, 5.0)); };
+  // Return to adaptive: one small step per second, each step taken as the pulse delivers feedback
+  var TB = 8.6, STEPS = 8;
+  // Learning curve: slow start, steeper middle, then levels off (normalised logistic)
+  var logistic = function (x) { return 1 / (1 + Math.exp(-9 * (x - 0.5))); };
+  var sCurve = function (x) { return (logistic(x) - logistic(0)) / (logistic(1) - logistic(0)); };
+  var backAt = function (t) {
+    var e = t - TB; if (e <= 0) return 0;
+    var k = Math.floor(e), f = ease(seg(e - k, 0.6, 1.0));
+    return sCurve(clamp((k + f) / STEPS));
+  };
+  var rnd = function (i) { var v = Math.sin(i * 12.9898 + 4.1) * 43758.5453; return v - Math.floor(v); };
+  function sample(sec, j) {
+    // decoded 'adaptive state' level for this second (low while rigid, high once back to adaptive) + noise
+    var tk = T0 + sec + (j + 0.5) / SPS, rig = clamp(outAt(tk) - backAt(tk));
+    var i = sec * SPS + j, level = 0.14 + 0.72 * (1 - rig);
+    var v = level + 0.14 * (rnd(i) - 0.5) + 0.03 * Math.sin(i * 1.7);
+    return 8 - 30 * Math.max(0.03, Math.min(0.97, v));
+  }
+  function drawTrace(t) {
+    var e = t - T0;
+    if (e < 0) { trace.setAttribute('points', ''); return; }
+    var k = Math.floor(e), cyc = e - k;
+    var f = seg(cyc, 1 / 3, 2 / 3);          // the newest second is written as the pulse leaves the decoder
+    var first = Math.max(0, k - (WIN - 1)), pts = [];
+    for (var sec = first; sec <= k; sec++) {
+      var n = sec < k ? SPS : Math.round(SPS * f);
+      for (var j = 0; j < n; j++) {
+        var x = PX0 + (sec - first) * SECW + (j + 0.5) * (SECW / SPS);
+        pts.push(x.toFixed(1) + ',' + sample(sec, j).toFixed(1));
+      }
+    }
+    trace.setAttribute('points', pts.join(' '));
+  }
 
   function render(t) {
     // Brain position: drift right (2.6-5.0s), back to centre (9.6-12.4s)
-    var out = ease(seg(t, 2.6, 5.0)), back = ease(seg(t, 9.6, 12.4));
+    var out = outAt(t), back = backAt(t);
     var x = lerp(CENTER, RIGID, out - back);
     var breathe = SCALE * (1 + 0.025 * Math.sin(t * 2.4));
     var jitter = (out > 0.98 && back < 0.02) ? Math.sin(t * 40) * 0.6 : 0;
     brain.setAttribute('transform', 'translate(' + (x + jitter) + ' ' + Y + ') scale(' + breathe + ')');
     for (var r = 0; r < rigidFills.length; r++) rigidFills[r].setAttribute('opacity', (out - back).toFixed(3));
 
-    adversity.setAttribute('opacity', (seg(t, 2.3, 2.9) - seg(t, 8.8, 9.4)).toFixed(3));
+    adversity.setAttribute('opacity', (seg(t, 2.3, 2.9) - seg(t, 8.0, 8.6)).toFixed(3));
 
     // Loop builds up (5.4-8.4s)
     loop.setAttribute('opacity', seg(t, 5.4, 6.0).toFixed(3));
@@ -218,20 +279,25 @@
     });
 
     // Signal pulse circulating around the loop once it is built
-    if (t > 7.6) {
-      var cyc = ((t - 7.6) / 2.2) % 1, which = Math.floor(cyc * 3), local = cyc * 3 - which;
+    if (t > T0) {
+      var cyc = (t - T0) % 1, which = Math.min(2, Math.floor(cyc * 3)), local = cyc * 3 - which;
       var pt = arcs[which].getPointAtLength(arcLens[which] * local);
       pulse.setAttribute('cx', pt.x); pulse.setAttribute('cy', pt.y);
       pulse.setAttribute('opacity', 0.9);
     } else pulse.setAttribute('opacity', 0);
 
+    drawTrace(t);
+
     // Feedback gauge rises as the brain is guided back
     var g = 6 + 16 * back + 2 * Math.sin(t * 3) * (t > 7.6 ? 1 : 0);
     gauge.setAttribute('height', Math.max(0, g * seg(t, 6.6, 7.2)).toFixed(2));
     gauge.setAttribute('y', (8.5 - Math.max(0, g * seg(t, 6.6, 7.2))).toFixed(2));
+    // Gauge colour follows the brain's position on the scale: bluish grey (rigid) -> green (adaptive)
+    var rig = clamp(out - back), G = [47, 158, 85], B = [111, 127, 152];
+    gauge.setAttribute('fill', 'rgb(' + G.map(function (c, k) { return Math.round(lerp(c, B[k], rig)); }).join(',') + ')');
 
-    // Corrective arrow (8.8-9.6s draws in)
-    var c = ease(seg(t, 8.8, 9.6));
+    // Corrective arrow draws in as the return begins
+    var c = ease(seg(t, 8.2, 9.0));
     correct.setAttribute('opacity', (c - seg(t, 12.6, 13.2) * 0.0).toFixed(3));
     correctLine.setAttribute('x2', lerp(760, 560, c).toFixed(1));
 
