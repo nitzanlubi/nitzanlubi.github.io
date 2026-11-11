@@ -14,6 +14,25 @@ body {
   font-weight: 300;
 }
 
+// Top banner: no site name; tabs start where the page content starts
+.masthead .site-title {
+  display: none;
+}
+.greedy-nav .visible-links {
+  justify-content: flex-start;
+
+  li:first-child a {
+    margin-left: 0;
+  }
+
+  @include breakpoint($large) {
+    padding-left: 200px;
+  }
+  @include breakpoint($x-large) {
+    padding-left: 300px;
+  }
+}
+
 // Sidebar: round profile photo
 .author__avatar img {
   aspect-ratio: 1 / 1;
@@ -31,7 +50,6 @@ body {
 }
 .about-page .page__content a {
   color: #0000ee;
-  font-weight: 700;
   text-decoration: underline;
 }
 

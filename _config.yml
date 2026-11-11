@@ -57,7 +57,7 @@ plugins:
   - jekyll-redirect-from
 
 author:
-  name   : "Nitzan Lubianiker"
+  name   : "Nitzan Lubianiker, Ph.D."
   avatar : "/assets/images/nitzan_avatar.jpg"
   bio    : "Cognitive Neuroscientist studying learning, memory and self-neuromodulation."
   links:
