@@ -21,15 +21,16 @@ body {
   border-radius: 50%;
 }
 
-// About page: no title, slightly smaller text, bold black underlined links
+// About page: no title, slightly smaller text, bold blue underlined links
 .about-page .page__title {
   display: none;
 }
-.about-page .page__content {
+.about-page .page__content,
+.research-page .page__content {
   font-size: 0.9em;
 }
 .about-page .page__content a {
-  color: #000;
+  color: #0000ee;
   font-weight: 700;
   text-decoration: underline;
 }
