@@ -2,7 +2,6 @@
 permalink: /
 redirect_from:
   - /about/
-title: "About me"
 classes:
   - wide
   - about-page

@@ -13,12 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Nitzan Lubianiker, PhD
+title: Nitzan Lubianiker, Ph.D.
 email: nitzanlubi@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >-
+  Postdoctoral researcher at Yale and Princeton studying neurocognitive
+  plasticity with behavioral methods, neuroimaging, machine learning and
+  closed-loop neurofeedback.
+og_image: /assets/images/nitzan_og.jpg
 twitter_username: username
 github_username: username
 minimal_mistakes_skin: default
