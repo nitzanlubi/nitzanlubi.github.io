@@ -1,7 +1,9 @@
 ---
 permalink: /inspirations/
-title: "Beings who inspire me"
-classes: wide
+title: "Beings who inspire my work"
+classes:
+  - wide
+  - inspirations-page
 ---
 
 <div class="media-grid">
