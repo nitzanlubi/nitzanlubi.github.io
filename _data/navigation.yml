@@ -7,6 +7,8 @@ main:
     url: /publications/
   - title: "Media"
     url: /media/
+  - title: "Inspirations"
+    url: /inspirations/
   - title: "Contact"
     url: /contact/
   - title: "CV"

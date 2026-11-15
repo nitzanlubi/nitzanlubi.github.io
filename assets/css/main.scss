@@ -117,3 +117,13 @@ body {
     color: #777;
   }
 }
+
+// Inspirations page: images in the same 2-column grid as Media
+.page__content .inspiration-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1200 / 736;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 8px;
+}
