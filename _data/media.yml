@@ -13,10 +13,10 @@
   image: "https://i.guim.co.uk/img/media/e96883520a205430ed33e6d26d69065d42d9a90c/410_251_1397_1118/master/1397.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c50913eb471496c0f623f31ffc8940df"
 
 - outlet: "The Economist"
-  title: "Mind over matter (print edition)"
-  date: "Jan. 24, 2026"
-  url: ""
-  image: ""
+  title: "A new study highlights the brain's role in immune health"
+  date: "Jan. 21, 2026"
+  url: "https://www.economist.com/science-and-technology/2026/01/21/a-new-study-highlights-the-brains-role-in-immune-health?giftId=MWZiMzVkOWYtMzc2YS00OWEyLWE3ZjItZTJmN2JhYTQ1ZWI4dGVnX3VzZXI%3D"
+  image: "/assets/images/media/economist.jpg"
 
 - outlet: "Science"
   title: "In the Pipeline: Bearing down on the placebo effect"
